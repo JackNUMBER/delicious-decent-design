@@ -9,7 +9,7 @@
 
 /* Remove ugly textured background */
 body {
-    background: white;
+    background: #F5F5F5;
 }
 
 /* Remove hasbeen border-radius */
@@ -18,7 +18,16 @@ body {
 div.profileInfo,
 div.searchPanel button,
 div.searchPanel input,
-div.tabMenu ul li a
+div.tabMenu ul li a,
+.textFldsRow input[type="text"],
+.textFldsRow input[type="password"],
+.textFldsRow textarea,
+div.signInFlds input,
+.saveLinkPop textarea,
+#DELI_link_info input,
+#DELI_link_info textarea,
+#DELI_link_info #DELI_link_url input,
+.DELI_tag_container
 {
     border-radius: 0;
 }
@@ -30,6 +39,11 @@ div[class*="googleAd"] {
 
 div.contentPanel {
     padding-top: 0;
+}
+
+div.profileContent div.container,
+div.homeContentPan div.container {
+    padding-right: 10px;
 }
 
 /* CTA "Add bookmark" */
@@ -59,11 +73,11 @@ div.navPanel ul li.toplink:last-child i.fa {
 
 /* reset */
 button,
-input {
-    font-size: 12px;
+input,
+textarea {
+    font-size: 14px;
     font-weight: normal;
 }
-
 
 /* Reduce title */
 div.profileMidpanel h1 {
@@ -114,6 +128,44 @@ ul.tagName li a {
     max-width: 550px !important;
 }
 
+#delAlert .alert .con .btns,
+.popcon .saveSocialLinks,
+#DELI_banner
+{
+    padding: 10px;
+    background: #EEEEEE;
+}
+
+/* popup fields */
+div.signInFlds input,
+.saveLinkPop textarea,
+#DELI_link_info input,
+#DELI_link_info textarea,
+#DELI_link_info #DELI_link_url input,
+.DELI_tag_container
+{
+    border: none;
+    border-bottom: 1px solid #c4c4c4;
+    background: transparent;
+
+}
+
+#DELI_link_info #DELI_link_url input:hover {
+    border-color: #c4c4c4;
+}
+
+div.signInFlds input:focus,
+.saveLinkPop textarea:focus,
+#DELI_link_info input:focus,
+#DELI_link_info textarea:focus,
+#DELI_link_info #DELI_link_url input:focus,
+.DELI_tag_container.focused
+{
+    box-shadow: none;
+    border-color: #0076e8;
+}
+
+
 /* popup/delete */
 #delAlert .alert .con {
     border-radius: 0;
@@ -128,15 +180,26 @@ ul.tagName li a {
     padding: 30px;
     font-size: 15px;
     line-height: 23px;
-    color: #868484;
+    color: #000;
 }
 
 #delAlert .alert .con .btns {
-    height: 55px;
+    height: auto;
     border: none;
 }
 
 /* popup/edit */
+.popcon .pop {
+    padding: 30px;
+    padding-bottom: 0;
+}
+
+@media (max-width: 1000px) {
+    .popcon .pop {
+        margin: auto;
+    }
+}
+
 div.signInFlds {
     margin: 0;
     padding: 0;
@@ -151,11 +214,63 @@ div.popInner h3 {
     display: none;
 }
 
+.saveLinkPop label {
+    font-size: 12px;
+    color: #000;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.saveLinkPop label span {
+    text-transform: none;
+    font-weight: normal;
+}
+
+.popcon .saveSocialLinks {
+    background: #eee;
+    margin: 0 -30px;
+}
+
+.popcon .publicBtn {
+    background: transparent;
+    color: #0b79e5;
+}
+
+.popcon .privateBtn {
+    background: transparent;
+    color: #e8a923;
+}
+
 /* popup/add */
+.notRegisterPan {
+    display: none;
+}
+
+#DELI_banner {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0 !important;
+    left: 0;
+    bottom: 0;
+}
+
 #DELI_banner #DELI_add_link {
     width: auto;
     text-shadow: none;
     box-shadow: none;
+}
+
+#DELI_link_info #DELI_link_title {
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+#DELI_link_info input,
+#DELI_link_info #DELI_link_url input,
+#DELI_link_info #DELI_link_comment {
+    padding: 9px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 #DELI_mist {
@@ -175,14 +290,25 @@ div.popInner h3 {
     background: white !important;
 }
 
+
+#DELI_banner #DELI_add_link,
+#DELI_banner #DELI_add_link:focus,
+#DELI_banner #DELI_make_link_private,
+#DELI_banner #DELI_make_link_private:focus
+{
+    border: 0;
+    box-shadow: none;
+}
+
+.DELI_dropdown {
+    top: 50px;
+    max-height: 145px;
+}
+
 #DELI_close {
     background-color: white !important;
 }
 
 #DELI_close:hover {
-    background-color: #0a539a !important;
-}
-
-body {
-    background: transparent !important;
+    background-color: #F5F5F5 !important;
 }
