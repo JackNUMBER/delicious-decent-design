@@ -1,0 +1,188 @@
+/*
+ * Make Delicious better with a decent design
+ * by Jack NUMBER, inspired by Tunghsiao Liu (previous Delicious designer)
+ * https://sparanoid.com/work/delicious/
+ *
+ * Better design, design normalized, easy to use
+ */
+
+
+/* Remove ugly textured background */
+body {
+    background: white;
+}
+
+/* Remove hasbeen border-radius */
+.expanding,
+.expanding li a,
+div.profileInfo,
+div.searchPanel button,
+div.searchPanel input,
+div.tabMenu ul li a
+{
+    border-radius: 0;
+}
+
+/* Hide ads area (tested with AdBlockPlus) */
+div[class*="googleAd"] {
+    display: none;
+}
+
+div.contentPanel {
+    padding-top: 0;
+}
+
+/* CTA "Add bookmark" */
+div.navPanel ul li.toplink:last-child {
+    display: inline-block;
+    padding: 5px 15px;
+    margin-left: 15px;
+    font-size: 16px;
+    line-height: 32px;
+    background: #fff;
+    cursor: pointer;
+}
+
+div.navPanel ul li.toplink:last-child,
+div.navPanel ul li.toplink:last-child a {
+    color: #0076e8;
+}
+
+div.navPanel ul li.toplink:last-child:hover,
+div.navPanel ul li.toplink:last-child:hover a {
+    color: #0a539a;
+}
+
+div.navPanel ul li.toplink:last-child i.fa {
+    margin-right: 5px;
+}
+
+/* reset */
+button,
+input {
+    font-size: 12px;
+    font-weight: normal;
+}
+
+
+/* Reduce title */
+div.profileMidpanel h1 {
+    font-size: 20px;
+}
+
+/* Profile details */
+div.profileInfo {
+    background: #eee;
+}
+
+/* Link item */
+.articleInfoPan p:first-child {
+    /*display: none;*/
+}
+
+.articleInfoPan p:nth-child(2) a {
+    color: #868484;
+}
+
+/* tag list */
+ul.tagName {
+    padding-top: 5px;
+}
+
+ul.tagName li a {
+    color: #868484;
+}
+
+/* popup */
+#DELI_banner #DELI_add_link,
+#delAlert .alert .con .btns button {
+    background: #0076e8;
+    padding: 5px 15px;
+    display: inline-block;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    line-height: 32px;
+    color: #fff;
+    cursor: pointer;
+}
+
+#delAlert .alert,
+.popcon .pop {
+    border: none;
+    border-radius: 0;
+    max-width: 550px !important;
+}
+
+/* popup/delete */
+#delAlert .alert .con {
+    border-radius: 0;
+}
+
+#delAlert .alert .con .head {
+    border: none;
+    display: none;
+}
+
+#delAlert .alert .con .msg {
+    padding: 30px;
+    font-size: 15px;
+    line-height: 23px;
+    color: #868484;
+}
+
+#delAlert .alert .con .btns {
+    height: 55px;
+    border: none;
+}
+
+/* popup/edit */
+div.signInFlds {
+    margin: 0;
+    padding: 0;
+}
+
+div.popInner {
+    padding: 0;
+    margin: 0;
+}
+
+div.popInner h3 {
+    display: none;
+}
+
+/* popup/add */
+#DELI_banner #DELI_add_link {
+    width: auto;
+    text-shadow: none;
+    box-shadow: none;
+}
+
+#DELI_mist {
+    opacity: 0.5 !important;
+    background: #45484d !important;
+    background: -moz-linear-gradient(-45deg, #45484d 0%, #000000 100%) !important;
+    background: -webkit-linear-gradient(-45deg, #45484d 0%,#000000 100%) !important;
+    background: linear-gradient(135deg, #45484d 0%,#000000 100%) !important;
+}
+
+#DELI_save_link_slidedown {
+    box-shadow: 0 0 8px rgba(0,0,0,0.5) !important;
+    margin-left: 0 !important;
+    left: calc(50% + 350px) !important;
+    top: calc(50% + 275px) !important;
+    transform: translateX(-50%) translateY(-50%) !important;
+    background: white !important;
+}
+
+#DELI_close {
+    background-color: white !important;
+}
+
+#DELI_close:hover {
+    background-color: #0a539a !important;
+}
+
+body {
+    background: transparent !important;
+}
