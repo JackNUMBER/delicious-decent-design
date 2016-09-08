@@ -27,13 +27,15 @@ div.signInFlds input,
 #DELI_link_info input,
 #DELI_link_info textarea,
 #DELI_link_info #DELI_link_url input,
-.DELI_tag_container
+.DELI_tag_container,
+.saveLinkPop select
 {
     border-radius: 0;
 }
 
 /* Hide ads area (tested with AdBlockPlus) */
-div[class*="googleAd"] {
+div[class*="googleAd"],
+div[class*="bookmark-ad"] {
     display: none;
 }
 
@@ -74,7 +76,8 @@ div.navPanel ul li.toplink:last-child i.fa {
 /* reset */
 button,
 input,
-textarea {
+textarea,
+select {
     font-size: 14px;
     font-weight: normal;
 }
@@ -142,7 +145,8 @@ div.signInFlds input,
 #DELI_link_info input,
 #DELI_link_info textarea,
 #DELI_link_info #DELI_link_url input,
-.DELI_tag_container
+.DELI_tag_container,
+.saveLinkPop select
 {
     border: none;
     border-bottom: 1px solid #c4c4c4;
@@ -159,7 +163,8 @@ div.signInFlds input:focus,
 #DELI_link_info input:focus,
 #DELI_link_info textarea:focus,
 #DELI_link_info #DELI_link_url input:focus,
-.DELI_tag_container.focused
+.DELI_tag_container.focused,
+.saveLinkPop select:focus
 {
     box-shadow: none;
     border-color: #0076e8;
@@ -289,7 +294,6 @@ div.popInner h3 {
     transform: translateX(-50%) translateY(-50%) !important;
     background: white !important;
 }
-
 
 #DELI_banner #DELI_add_link,
 #DELI_banner #DELI_add_link:focus,
