@@ -87,6 +87,11 @@ div.profileMidpanel h1 {
     font-size: 20px;
 }
 
+/* main menu */
+.expanding li a {
+    background: transparent;
+}
+
 /* Profile details */
 div.profileInfo {
     background: #eee;
