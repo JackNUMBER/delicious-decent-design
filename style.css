@@ -33,6 +33,10 @@ div.signInFlds input,
     border-radius: 0;
 }
 
+div.searchPanel input {
+    box-shadow: none;
+}
+
 /* Hide ads area (tested with AdBlockPlus) */
 div[class*="googleAd"],
 div[class*="bookmark-ad"] {
@@ -94,7 +98,8 @@ div.profileMidpanel h1 {
 
 /* Profile details */
 div.profileInfo {
-    background: #eee;
+    background: #fff;
+    box-shadow: none;
 }
 
 /* Link item */
