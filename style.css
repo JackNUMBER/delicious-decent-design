@@ -116,6 +116,14 @@ div.profileInfo {
     box-shadow: none;
 }
 
+div.profileLinks {
+    padding-top: 2px;
+}
+
+p + div.profileLinks {
+    padding-top: 10px;
+}
+
 /* Link item */
 .articleInfoPan p:first-child {
     /*display: none;*/
@@ -339,4 +347,19 @@ div.popInner h3 {
 
 #DELI_close:hover {
     background-color: #F5F5F5 !important;
+}
+
+/* settings fields */
+.textFldsRow input[type="text"],
+.textFldsRow input[type="password"],
+.textFldsRow textarea
+{
+    border: none;
+    border-bottom: 1px solid #c4c4c4;
+    background: transparent;
+
+}
+
+.textFldsRow textarea {
+    height: 75px;
 }
