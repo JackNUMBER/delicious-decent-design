@@ -373,3 +373,18 @@ div.articleLeftPanel {
     box-shadow: none;
     background: #fff;
 }
+
+/* signin & signup */
+#user-login-form {
+    margin-top: 5px;
+}
+
+div.signInFlds {
+    border: none;
+}
+
+#usersignup,
+.loginPanel {
+    margin: 0 auto;
+    max-width: 550px;
+}
