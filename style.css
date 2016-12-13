@@ -363,3 +363,13 @@ div.popInner h3 {
 .textFldsRow textarea {
     height: 75px;
 }
+
+/* home */
+div.articleLeftPanel {
+    width: 100%;
+}
+
+.deliciousMessage {
+    box-shadow: none;
+    background: #fff;
+}
