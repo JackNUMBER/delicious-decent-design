@@ -28,7 +28,20 @@ div.signInFlds input,
 #DELI_link_info textarea,
 #DELI_link_info #DELI_link_url input,
 .DELI_tag_container,
-.saveLinkPop select
+.saveLinkPop select,
+div.homeBtns a,
+div.navPanel ul li.signupBtn a,
+.deliciousMessage,
+div.signBtnPan button,
+div.homeBtns a,
+div.profilePic,
+div.profilePic img,
+.notificationsRow img,
+.notificationsPanel button,
+a.unFollowBtn,
+a.unfollowBtnSmall,
+a.followBtn,
+a.followBtnSmall
 {
     border-radius: 0;
 }
