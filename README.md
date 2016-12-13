@@ -9,9 +9,4 @@ Come back to the previous design (made by [Tunghsiao Liu](https://sparanoid.com/
 To apply this patch to Delicious, install the **Stylish** extension for browser (Chrome/Firefox).
 Then copy/paste the style.css code and define the domain to `del.icio.us`.
 
-##Next
-This project is in progress.
-
-Incoming:
-* Stylebot compatibility
-* GreaseMonkey script to fix JS to
+![Preview of Delicious Decent Design](/preview/preview.jpg?raw=true)
