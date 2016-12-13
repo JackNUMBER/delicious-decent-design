@@ -52,7 +52,8 @@ div.searchPanel input {
 
 /* Hide ads area (tested with AdBlockPlus) */
 div[class*="googleAd"],
-div[class*="bookmark-ad"] {
+div[class*="bookmark-ad"],
+div.articleRightPanel {
     display: none;
 }
 
